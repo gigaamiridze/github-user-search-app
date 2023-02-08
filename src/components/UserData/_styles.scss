@@ -1,0 +1,9 @@
+.user-card {
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 15px;
+  background-color: $white;
+  box-shadow: $shBox;
+  @include flexProperty(center, inherit);
+  @extend %themeModeTransition;
+}

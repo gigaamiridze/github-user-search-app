@@ -1,0 +1,7 @@
+%themeModeTransition {
+  @include transition(all, 0.5s, ease-in-out);
+}
+
+%elementsTransition {
+  @include transition(all, 0.3s, ease-in-out);
+}

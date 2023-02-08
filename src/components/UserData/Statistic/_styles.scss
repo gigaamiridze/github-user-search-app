@@ -1,0 +1,25 @@
+.statistic-box {
+  background-color: $saturatedWhite;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin: 20px 0 30px 9.5rem;
+  @include flexProperty(space-between, center);
+  @extend %themeModeTransition;
+
+  .stat-wrapper {
+    @include flexProperty(inherit, flex-start);
+    flex-direction: column;
+    row-gap: 12px;
+
+    h6 {
+      @include textProperty(13px, $desautaretedBlue, capitalize);
+      @extend %themeModeTransition;
+    }
+
+    span {
+      @include textProperty(22px, $darkBlue, none);
+      @extend %themeModeTransition;
+      font-weight: $bold;
+    }
+  }
+}

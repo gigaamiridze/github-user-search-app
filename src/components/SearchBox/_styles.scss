@@ -1,0 +1,74 @@
+form {
+  margin: 30px 0 20px;
+
+  .search-box {
+    width: 100%;
+    height: 65px;
+    background-color: $white;
+    border-radius: 15px;
+    box-shadow: $shBox;
+    padding: 8px 8px 8px 20px;
+    column-gap: 15px;
+    @include flexProperty(space-between, center);
+    @extend %themeModeTransition;
+
+    .wrapper-box {
+      height: 100%;
+      column-gap: 15px;
+      @include flexProperty(space-between, center);
+
+      &:first-child {
+        width: 100%;
+      }
+
+      .search-icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      .search-input {
+        background-color: transparent;
+        width: 100%;
+        height: 40px;
+        border-radius: 7px;
+        padding: 0 15px;
+        border: none;
+        outline: none;
+        font-family: $spaceMono;
+        @include textProperty(17px, $veryDarkBlue, none);
+        @include transition(all, .10s, ease-in-out);
+
+        &::placeholder {
+          color: $desautaretedBlue;
+        }
+
+        &:focus {
+          @include border(2px, solid, $grayishBlue);
+        }
+      }
+
+      .error-msg {
+        width: 83px;
+        @include textProperty(15px, $red, capitalize);
+      }
+
+      .search-btn {
+        min-width: 105px;
+        height: 100%;
+        background-color: $blue;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        @include textProperty(16px, $white, capitalize);
+        font-weight: $bold;
+        font-family: $spaceMono;
+        @extend %elementsTransition;
+
+        &:hover {
+          background-color: $lightBlue;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.dark {
+  background-color: $veryDarkBlue;
+
+  .header-title {
+    color: $white;
+  }
+
+  .search-box {
+    background-color: $darkDesaturatedBlue;
+    box-shadow: none;
+
+    .wrapper-box {
+      .search-input {
+        color: $white;
+
+        &::placeholder {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .user-card {
+    background-color: $darkDesaturatedBlue;
+    box-shadow: none;
+
+    .loader {
+      border-top-color: $white;
+    }
+
+    .head-info {
+      .wrapper-box {
+        .base-info {
+          .full-name,
+          .bio {
+            color: $white;
+          }
+        }
+      }
+
+      .joined-date {
+        color: $white;
+      }
+    }
+
+    .statistic-box {
+      background-color: $veryDarkBlue;
+      
+      .stat-wrapper {
+        h6, span {
+          color: $white;
+        }
+      }
+    }
+
+    .links {
+      .vertical-box {
+        .info-box {
+          svg {
+            fill: $gray;
+          }
+
+          span,
+          a,
+          .hoverEffect:hover {
+            color: $gray;
+          }
+
+          .active {
+            color: $white;
+            fill: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.light {
+  background-color: $saturatedWhite;
+}

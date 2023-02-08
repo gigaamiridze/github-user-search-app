@@ -1,0 +1,49 @@
+.head-info {
+  @include flexProperty(space-between, flex-start);
+
+  .wrapper-box {
+    @include flexProperty(inherit, flex-start);
+    column-gap: 2rem;
+
+    .img-box {
+      max-width: 117px;
+      width: 100%;
+      height: 117px;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .base-info {
+      max-width: 100%;
+      width: 345px;
+
+      .full-name {
+        @include textProperty(26px, $darkBlue, none);
+        font-weight: $bold;
+        margin-bottom: 10px;
+        @extend %themeModeTransition;
+      }
+
+      .account-link {
+        @include textProperty(16px, $blue, none);
+      }
+
+      .bio {
+        margin-top: 25px;
+        line-height: 20px;
+        @include textProperty(15px, $desautaretedBlue, none);
+        @extend %themeModeTransition;
+      }
+    }
+  }
+
+  .joined-date {
+    @include textProperty(15px, $grayishBlue, none);
+    @extend %themeModeTransition;
+  }
+}

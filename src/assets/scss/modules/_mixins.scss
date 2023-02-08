@@ -1,0 +1,35 @@
+@mixin positions($x, $y) {
+  top: $y;
+  left: $x;
+  transform: translate(-$x, -$y);
+}
+
+@mixin flexProperty($horizontal, $vertical) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+@mixin textProperty($fontSize, $color, $transform) {
+  font-size: $fontSize;
+  color: $color;
+  text-transform: $transform;
+}
+
+@mixin size($maxWidth, $width, $height) {
+  max-width: $maxWidth;
+  width: $width;
+  height: $height;
+}
+
+@mixin transition($property, $duration, $timingFunc) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timingFunc;
+}
+
+@mixin border($width, $style, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}

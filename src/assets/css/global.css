@@ -1,0 +1,424 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.loader, .statistic-box .stat-wrapper span, .statistic-box .stat-wrapper h6, .statistic-box, .head-info .joined-date, .head-info .wrapper-box .base-info .bio, .head-info .wrapper-box .base-info .full-name, .user-card, form .search-box, .header-title, body #root .App {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.links .vertical-box .info-box span, .links .vertical-box .info-box a, .links .vertical-box .info-box svg, form .search-box .wrapper-box .search-btn, .theme-mode .mode-name,
+.theme-mode .mode-icon {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+body {
+  height: 100vh;
+}
+body #root {
+  height: 100%;
+}
+body #root .App {
+  height: 100%;
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #root .App .container {
+  max-width: 730px;
+  width: 100%;
+}
+body #root .App .container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark {
+  background-color: hsl(220deg, 40%, 13%);
+}
+.dark .header-title {
+  color: hsl(0deg, 0%, 100%);
+}
+.dark .search-box {
+  background-color: hsl(222deg, 41%, 20%);
+  box-shadow: none;
+}
+.dark .search-box .wrapper-box .search-input {
+  color: hsl(0deg, 0%, 100%);
+}
+.dark .search-box .wrapper-box .search-input::placeholder {
+  color: hsl(0deg, 0%, 100%);
+}
+.dark .user-card {
+  background-color: hsl(222deg, 41%, 20%);
+  box-shadow: none;
+}
+.dark .user-card .loader {
+  border-top-color: hsl(0deg, 0%, 100%);
+}
+.dark .user-card .head-info .wrapper-box .base-info .full-name,
+.dark .user-card .head-info .wrapper-box .base-info .bio {
+  color: hsl(0deg, 0%, 100%);
+}
+.dark .user-card .head-info .joined-date {
+  color: hsl(0deg, 0%, 100%);
+}
+.dark .user-card .statistic-box {
+  background-color: hsl(220deg, 40%, 13%);
+}
+.dark .user-card .statistic-box .stat-wrapper h6, .dark .user-card .statistic-box .stat-wrapper span {
+  color: hsl(0deg, 0%, 100%);
+}
+.dark .user-card .links .vertical-box .info-box svg {
+  fill: #EEEEEE;
+}
+.dark .user-card .links .vertical-box .info-box span,
+.dark .user-card .links .vertical-box .info-box a,
+.dark .user-card .links .vertical-box .info-box .hoverEffect:hover {
+  color: #EEEEEE;
+}
+.dark .user-card .links .vertical-box .info-box .active {
+  color: hsl(0deg, 0%, 100%);
+  fill: hsl(0deg, 0%, 100%);
+}
+
+.light {
+  background-color: hsl(227deg, 100%, 98%);
+}
+
+.header-title {
+  font-size: 26px;
+  color: hsl(217deg, 21%, 21%);
+  text-transform: none;
+  font-weight: 700;
+}
+
+.theme-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+}
+.theme-mode:hover .mode-name {
+  color: hsl(220deg, 40%, 13%);
+}
+.theme-mode:hover .mode-icon {
+  fill: hsl(220deg, 40%, 13%);
+}
+.theme-mode .mode-name {
+  font-size: 14px;
+  color: hsl(217deg, 20%, 51%);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+.theme-mode .mode-icon {
+  fill: hsl(217deg, 20%, 51%);
+}
+#light .mode-name {
+  color: hsl(0deg, 0%, 100%);
+}
+
+#light .mode-icon {
+  fill: hsl(0deg, 0%, 100%);
+}
+
+#light:hover .mode-name {
+  color: hsl(217deg, 20%, 51%);
+}
+
+#light:hover .mode-icon {
+  fill: hsl(217deg, 20%, 51%);
+}
+
+form {
+  margin: 30px 0 20px;
+}
+form .search-box {
+  width: 100%;
+  height: 65px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 15px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.1986);
+  padding: 8px 8px 8px 20px;
+  column-gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form .search-box .wrapper-box {
+  height: 100%;
+  column-gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form .search-box .wrapper-box:first-child {
+  width: 100%;
+}
+form .search-box .wrapper-box .search-icon {
+  width: 20px;
+  height: 20px;
+}
+form .search-box .wrapper-box .search-input {
+  background-color: transparent;
+  width: 100%;
+  height: 40px;
+  border-radius: 7px;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+  font-family: "Space Mono", monospace;
+  font-size: 17px;
+  color: hsl(220deg, 40%, 13%);
+  text-transform: none;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+form .search-box .wrapper-box .search-input::placeholder {
+  color: hsl(217deg, 35%, 45%);
+}
+form .search-box .wrapper-box .search-input:focus {
+  border-width: 2px;
+  border-style: solid;
+  border-color: hsl(217deg, 20%, 51%);
+}
+form .search-box .wrapper-box .error-msg {
+  width: 83px;
+  font-size: 15px;
+  color: hsl(0deg, 91%, 62%);
+  text-transform: capitalize;
+}
+form .search-box .wrapper-box .search-btn {
+  min-width: 105px;
+  height: 100%;
+  background-color: hsl(212deg, 100%, 50%);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: hsl(0deg, 0%, 100%);
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+form .search-box .wrapper-box .search-btn:hover {
+  background-color: #61abff;
+}
+
+.user-card {
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 15px;
+  background-color: hsl(0deg, 0%, 100%);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.1986);
+  display: flex;
+  justify-content: center;
+  align-items: inherit;
+}
+
+.head-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.head-info .wrapper-box {
+  display: flex;
+  justify-content: inherit;
+  align-items: flex-start;
+  column-gap: 2rem;
+}
+.head-info .wrapper-box .img-box {
+  max-width: 117px;
+  width: 100%;
+  height: 117px;
+}
+.head-info .wrapper-box .img-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.head-info .wrapper-box .base-info {
+  max-width: 100%;
+  width: 345px;
+}
+.head-info .wrapper-box .base-info .full-name {
+  font-size: 26px;
+  color: hsl(217deg, 21%, 21%);
+  text-transform: none;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.head-info .wrapper-box .base-info .account-link {
+  font-size: 16px;
+  color: hsl(212deg, 100%, 50%);
+  text-transform: none;
+}
+.head-info .wrapper-box .base-info .bio {
+  margin-top: 25px;
+  line-height: 20px;
+  font-size: 15px;
+  color: hsl(217deg, 35%, 45%);
+  text-transform: none;
+}
+.head-info .joined-date {
+  font-size: 15px;
+  color: hsl(217deg, 20%, 51%);
+  text-transform: none;
+}
+
+.statistic-box {
+  background-color: hsl(227deg, 100%, 98%);
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin: 20px 0 30px 9.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.statistic-box .stat-wrapper {
+  display: flex;
+  justify-content: inherit;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.statistic-box .stat-wrapper h6 {
+  font-size: 13px;
+  color: hsl(217deg, 35%, 45%);
+  text-transform: capitalize;
+}
+.statistic-box .stat-wrapper span {
+  font-size: 22px;
+  color: hsl(217deg, 21%, 21%);
+  text-transform: none;
+  font-weight: 700;
+}
+
+.links {
+  margin-left: 9.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.links .vertical-box:first-child {
+  margin-right: 50px;
+}
+.links .vertical-box .info-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.links .vertical-box .info-box:first-child {
+  margin-bottom: 20px;
+}
+.links .vertical-box .info-box svg {
+  fill: hsl(217deg, 35%, 45%);
+  margin-right: 15px;
+  filter: opacity(0.5);
+}
+.links .vertical-box .info-box span, .links .vertical-box .info-box a {
+  font-size: 15px;
+  color: hsl(217deg, 35%, 45%);
+  text-transform: none;
+  line-height: 20px;
+  filter: opacity(0.5);
+}
+.links .vertical-box .info-box .active {
+  filter: none;
+}
+.links .vertical-box .info-box .hoverEffect:hover {
+  filter: opacity(0.5);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 135px 0;
+  display: inline-block;
+  border-top: 4px solid hsl(212deg, 100%, 50%);
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-bottom: 4px solid hsl(0deg, 91%, 62%);
+  border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

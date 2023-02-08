@@ -1,0 +1,18 @@
+// Importing font
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+// Importing scss files
+@import './base/reset';
+@import './modules/variables';
+@import './modules/mixins';
+@import './modules/classes';
+@import './main/general';
+@import './main/theme';
+@import '../../components/Header/Title/styles';
+@import '../../components/Header/Theme/Buttons/styles';
+@import '../../components/SearchBox/styles';
+@import '../../components/UserData/styles';
+@import '../../components/UserData/TopArea/styles';
+@import '../../components/UserData/Statistic/styles';
+@import '../../components/UserData/Links/styles';
+@import '../../components/Loader/styles';

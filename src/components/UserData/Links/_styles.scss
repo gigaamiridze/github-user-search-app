@@ -1,0 +1,40 @@
+.links {
+  margin-left: 9.5rem;
+  @include flexProperty(flex-start, center);
+
+  .vertical-box {
+    &:first-child {
+      margin-right: 50px;
+    }
+
+    .info-box {
+      @include flexProperty(flex-start, center);
+
+      &:first-child {
+        margin-bottom: 20px;
+      }
+      
+      svg {
+        fill: $desautaretedBlue;
+        margin-right: 15px;
+        filter: opacity(0.5);
+        @extend %elementsTransition;
+      }
+
+      span, a {
+        @include textProperty(15px, $desautaretedBlue, none);
+        line-height: 20px;
+        filter: opacity(0.5);
+        @extend %elementsTransition;
+      }
+
+      .active {
+        filter: none;
+      }
+
+      .hoverEffect:hover {
+        filter: opacity(0.5);
+      }
+    }
+  }
+}

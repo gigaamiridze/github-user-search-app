@@ -1,0 +1,45 @@
+.theme-mode {
+  @include flexProperty(space-between, center);
+  column-gap: 10px;
+  cursor: pointer;
+
+  &:hover .mode-name {
+    color: $veryDarkBlue;
+  }
+
+  &:hover .mode-icon {
+    fill: $veryDarkBlue;
+  }
+
+  .mode-name {
+    @include textProperty(14px, $grayishBlue, uppercase);
+    font-weight: $bold;
+    letter-spacing: 2.5px;
+  }
+
+  .mode-icon {
+    fill: $grayishBlue;
+  }
+
+  .mode-name,
+  .mode-icon {
+    @extend %elementsTransition;
+  }
+}
+
+// Light button styles
+#light .mode-name {
+  color: $white;
+}
+
+#light .mode-icon {
+  fill: $white;
+}
+
+#light:hover .mode-name {
+  color: $grayishBlue;
+}
+
+#light:hover .mode-icon {
+  fill: $grayishBlue;
+}

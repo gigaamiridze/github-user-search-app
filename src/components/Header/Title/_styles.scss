@@ -1,0 +1,5 @@
+.header-title {
+  @include textProperty(26px, $darkBlue, none);
+  @extend %themeModeTransition;
+  font-weight: $bold;
+}
