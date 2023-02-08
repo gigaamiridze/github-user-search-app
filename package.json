@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -18,7 +17,6 @@
     "@vitejs/plugin-react": "^3.0.0",
     "axios": "^1.2.2",
     "classnames": "^2.3.2",
-    "gh-pages": "^4.0.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "gulp-watch": "^5.0.1",
